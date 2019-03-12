@@ -1,1 +1,5 @@
 git branch: muestra la RAMA en la que estoy
+
+
+crear un archivo con texto adentro:
+    - echo "cualquier text" > nombre-archivo.ext
