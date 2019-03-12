@@ -1,15 +1,64 @@
+COMANDOS DE TERMINAL
+
 crear un archivo con texto adentro:
     - echo "cualquier text" > nombre-archivo.ext
 
+crear un nuevo directorio: 
+    - mkdir nombre-directorio
+
+navegar a un directorio
+    - cd ruta/del/directorio
+
+navegar a una carpeta arriba
+    - cd ..
+
+mostrar carpetas y archivos desde el directorio actual
+    - ls (-a   muestra carpetas ocultas) 
+    - dir
+
+
+
+
 git init: Iniciliza la carpeta donde esté mi terminal como repositorio GIT 
+
+git checkout -b nombre-rama: Genera nueva rama llamada "nombre-rama"
+
+git checkout una-rama: Mueve mi apuntador HEAD a el lugar del apuntador "una-rama"
+
 git branch: muestra las RAMAS de mi repo y con un * marca en la que estoy 
+
 git status: muestra los archivos que tienen modificaciones
            - verde las que están en STAGING (o sea, preparadas para el commit)
            - rojo, las que están en UNTRACKED (no se agregarían si hiciera commit)
+
 git log: muestra los commits de mi rama de adelante hacia atrás 
            - y entre parentesis las ramas que APUNTAN a cada commit
+           
 git add: Pasa los archivos de UNTRACKED a STAGING
    - -A agrega todos los archivos con modificaciones
    - hola.txt adios.txt   agrega únicamente los archivos que liste divididos con espacio
    - *.txt agrego todos los archivos con extención txt
-   - 
+
+git commit: Agrega a un commit todos los archivos que esten en STANGIN
+  - abre un editor de text (muy molesto)
+  - (Linux) Escribir mensaje -> Ctrl + X -> Y -> ENTER
+  - [-m "el mensaje que quiero"] para automaticamente ponerle un mensaje
+
+git show: muestra los cambios del último commit
+
+git remote add origin <url.asdasd.git>: para apuntar a un remote en github, por ejemplo
+
+git remote -v: verificar que hay REMOTES
+
+git push origin rama: sube cambios de mi rama al repo en la nube
+
+git pull: sincroniza el status de NUBE con mi COMPU
+
+git pull = git fetch + git merge
+
+git fetch: entera de los cambios en NUBE, pero no los aplica
+
+git merge: Para mezclar los commits de dos ramas distintas
+
+
+
